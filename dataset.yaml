@@ -1,0 +1,5 @@
+train: ./train/
+val: ./val/
+test: ./test/
+nc: 4
+names: ["damagedcommercialbuilding", "damagedresidentialbuilding", "undamagedcommercialbuilding", "undamagedresidentialbuilding"]
