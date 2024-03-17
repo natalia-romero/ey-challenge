@@ -250,6 +250,8 @@ This code uses the generate_tiles function to split the raster image specified b
 
 Once we have the tiles we can label the images along with their processing
 
+This process involves both pre-event and post-event images to identify residences that received damages post-event. Consequently, the generated images or tiles need to be renamed using the `imageCount` format. To achieve this, a different code is used compared to the one provided by the platform. Changing the tile names ensures that the order of the generated files remains consistent. This prevents difficulty in identifying pre-event and post-event images during labeling. A custom code is programmed to rename the tiles in such a way that the order remains intact. For example, if we search for `image1`, it corresponds to the same geographical position in both the pre_event and post_event folders. This streamlines the labeling process as we can easily identify if a residence was damaged after the event. Additionally, QGIS is employed to locate these residences and verify their bounding box to extract the most accurate label possible.
+
 ```Python
 
 def list_files(path):
