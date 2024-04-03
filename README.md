@@ -1,3 +1,33 @@
+---
+
+#EY Open Science Data Challenge
+
+---
+
+## Overview
+
+This repository hosts a machine learning model developed specifically for identifying and detecting damaged and undamaged coastal infrastructure, including both residential and commercial buildings. The model utilizes YOLO8 (You Only Look Once version 8) with oriented bounding box (OBB) technology, enabling efficient and accurate object detection in complex environments.
+
+## Objective
+
+The primary objective of this model is to provide accurate and timely identification of damaged infrastructure in coastal regions. By distinguishing between damaged and undamaged structures, it facilitates rapid decision-making for emergency response teams, insurers, and policymakers.
+
+## Dataset
+
+The model is trained on a comprehensive dataset comprising images from coastal areas. This dataset includes labeled examples of both damaged and undamaged infrastructure, enabling the model to learn the distinguishing features associated with each category.
+
+## Model Architecture
+
+The machine learning model employs YOLO8, a state-of-the-art object detection framework known for its speed and accuracy. Additionally, the model incorporates OBB technology, which enables the detection of objects with arbitrary orientations, crucial for accurately identifying coastal infrastructure in various spatial configurations.
+
+---
+
+# Implementation 
+
+---
+
+The model's implementation is encapsulated within the yolo-obb.ipynb notebook. Below, you'll find a detailed explanation of the code and its functionality.
+
 ## Supress Warnings
 In this section, we suppress any warnings that may arise during the execution of the code.
 
